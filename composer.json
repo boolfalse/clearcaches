@@ -1,0 +1,13 @@
+{
+    "name": "boolfalse/clearcaches",
+    "description": "With command \"php artisan clearcaches\" You will clear all Laravel caches, using all laravel's default commands",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Boolfalse\\ClearCaches\\": "src/"
+        }
+    }
+}
