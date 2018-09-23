@@ -2,6 +2,8 @@
 [![Total Downloads](https://poser.pugx.org/boolfalse/clearcaches/downloads)](https://packagist.org/packages/boolfalse/clearcaches)
 [![License](https://poser.pugx.org/boolfalse/clearcaches/license)](https://packagist.org/packages/boolfalse/clearcaches)
 
+### v1.0.8: Test change to new version.
+
 ### v1.0.6: Added 'dump' option for 'clearcaches' CLI custom artisan command.
 
 ### v1.0.5: Added custom artisan commands with appropriate signatures ('clearcaches', 'droptables').
