@@ -8,9 +8,11 @@
 [![composer.lock](https://poser.pugx.org/boolfalse/clearcaches/composerlock)](https://packagist.org/packages/boolfalse/clearcaches)
 
 
+### v1.0.3: Ability to publish package index page and have that as 'resources\views\clearcaches\cc.blade.php' file
+
 ### v1.0.2: Added embed buttons from https://poser.pugx.org/ for README.md
 
-## Installation:
+## Package Installation:
 
 Package for clearing/recreating all Laravel caches, and for dropping all DB tables. It's a package created for easy development.
 This package is my first created package. So I will glad to hear any advices and suggestions.
@@ -21,11 +23,9 @@ Require this package with composer. It is recommended to only require the packag
 composer require boolfalse/clearcaches --dev
 ```
 
-Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
+For Laravel 5.5 Package have Auto-Discovery functionality, so doesn't require you to manually add the ServiceProvider.
 
-The Debugbar will be enabled when `APP_DEBUG` is `true`.
-
-## Update:
+## Update the package:
 
 ```shell
 composer update boolfalse/clearcaches --lock
@@ -36,13 +36,19 @@ For updating all existing packages, just run:
 composer update
 ```
 
-## Remove:
+## Remove the package:
 
 ```shell
 composer remove boolfalse/clearcaches
 ```
 
- - For index page: your-domain/dev/
+## Publishing the package index view:
+
+```shell
+php artisan vendor:publish --provider="Boolfalse\ClearCaches\ClearCachesServiceProvider"
+```
+
+ - For index page: your-domain/dev/clearcaches-check
  - For clearing and recreating caches: your-domain/dev/clearcaches
  - For dropping all DB tables: your-domain/dev/droptables
 
