@@ -36,7 +36,7 @@ php artisan clearcaches
 ```
 With CLI option 'dump' You can prevent Autoload Dumping:
 ```shell
-php artisan --dump=no
+php artisan --dump='no'
 ```
 Drop all tables from DB:
 ```shell
