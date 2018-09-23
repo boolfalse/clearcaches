@@ -1,6 +1,6 @@
 {
     "name": "boolfalse/clearcaches",
-    "description": "With command \"php artisan clearcaches\" You will clear all Laravel caches, using all laravel's default commands",
+    "description": "Package for recreating Laravel all caches, and for dropping all DB tables",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",

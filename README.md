@@ -1,0 +1,1 @@
+Package for recreating Laravel all caches, and for dropping all DB tables
