@@ -52,6 +52,11 @@ php artisan droptables
 
 ## Update the package:
 
+This command will update this specific package:
+```shell
+composer update boolfalse/clearcaches
+```
+Or
 ```shell
 composer update boolfalse/clearcaches --lock
 ```
