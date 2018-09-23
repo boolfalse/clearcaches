@@ -2,10 +2,17 @@
 
 namespace Boolfalse\ClearCaches;
 
+use Boolfalse\ClearCaches\Commands\ClearCachesCommand;
+use Boolfalse\ClearCaches\Commands\DropTablesCommand;
 use Illuminate\Support\ServiceProvider;
 
 class ClearCachesServiceProvider extends ServiceProvider
 {
+    protected $commands = [
+        ClearCachesCommand::class,
+        DropTablesCommand::class,
+    ];
+
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
@@ -18,5 +25,7 @@ class ClearCachesServiceProvider extends ServiceProvider
     }
 
     public function register()
-    {}
+    {
+        $this->commands($this->commands);
+    }
 }

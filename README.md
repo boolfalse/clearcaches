@@ -8,7 +8,9 @@
 [![composer.lock](https://poser.pugx.org/boolfalse/clearcaches/composerlock)](https://packagist.org/packages/boolfalse/clearcaches)
 
 
-### v1.0.3: Ability to publish package index page and have that as 'resources\views\clearcaches\cc.blade.php' file
+### v1.0.5: Added custom artisan commands with appropriate signatures ('clearcaches', 'droptables').
+
+### v1.0.4: Ability to publish package index page and have that as 'resources\views\clearcaches\cc.blade.php' file
 
 ### v1.0.2: Added embed buttons from https://poser.pugx.org/ for README.md
 
@@ -28,6 +30,23 @@ For Laravel 5.4 and lower versions need to add service provider in config/app.ph
 Boolfalse\ClearCaches\ClearCachesServiceProvider::class,
 ```
 For Laravel 5.5 and higher Package have Auto-Discovery functionality, so doesn't require you to manually add the ServiceProvider.
+
+
+## Usage:
+
+Clear all Laravel Caches and Dump Autoload:
+```shell
+php artisan clearcaches
+```
+Drop all tables from DB:
+```shell
+php artisan droptables
+```
+
+ - For index page: your-domain/dev/clearcaches-check
+ - For clearing and recreating caches: your-domain/dev/clearcaches
+ - For dropping all DB tables: your-domain/dev/droptables
+
 
 ## Update the package:
 
@@ -61,11 +80,3 @@ php artisan config:cache
 ```shell
 php artisan vendor:publish --provider="Boolfalse\ClearCaches\ClearCachesServiceProvider"
 ```
-
- - For index page: your-domain/dev/clearcaches-check
- - For clearing and recreating caches: your-domain/dev/clearcaches
- - For dropping all DB tables: your-domain/dev/droptables
-
-Later I planning to do the same with custom artisan commands like:
-php artisan clearcaches
-php artisan droptables
