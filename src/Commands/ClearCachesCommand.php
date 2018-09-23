@@ -40,22 +40,29 @@ class ClearCachesCommand extends Command
     {
         Artisan::call('view:clear');
         echo "View caches cleared successfully!\n";
+
         Artisan::call('route:clear');
         echo "Route caches cleared successfully!\n";
+
         Artisan::call('config:clear');
         echo "Config caches cleared successfully!\n";
+
         Artisan::call('cache:clear');
         echo "Cache caches cleared successfully!\n";
+
         Artisan::call('config:cache');
         echo "Configs created successfully!\n";
 
         $dump = $this->option('dump');
         if(empty($dump)){
+            exec('composer dump-autoload');
+            echo "Autoload Dumped successfully!\n";
+        } else {
             if(strtolower($dump) == 'n' || strtolower($dump) == 'no'){
+                echo "Autoload Does't Dumped!\n";
+            } else {
                 exec('composer dump-autoload');
                 echo "Autoload Dumped successfully!\n";
-            } else {
-                echo "Autoload Does't Dumped!\n";
             }
         }
     }
