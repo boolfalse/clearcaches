@@ -1,9 +1,16 @@
 
 23.09.2018
-@boolfalse
+FB: @boolfalse
+GH: @boolfalse
 ----------------------
 
-Package for recreating Laravel all caches, and for dropping all DB tables
+Installation:
+composer require boolfalse/clearcaches
+----------------------
+
+Package for recreating Laravel all caches, and for dropping all DB tables.
+----------------------
+
 
 For index page:
 your-domain/dev/
