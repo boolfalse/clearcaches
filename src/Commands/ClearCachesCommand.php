@@ -48,7 +48,15 @@ class ClearCachesCommand extends Command
         echo "Cache caches cleared successfully!\n";
         Artisan::call('config:cache');
         echo "Configs created successfully!\n";
-        exec('composer dump-autoload');
-        echo "Autoload Dumped successfully!\n";
+
+        $dump = $this->option('dump');
+        if(empty($dump)){
+            if(strtolower($dump) == 'n' || strtolower($dump) == 'no'){
+                exec('composer dump-autoload');
+                echo "Autoload Dumped successfully!\n";
+            } else {
+                echo "Autoload Does't Dumped!\n";
+            }
+        }
     }
 }

@@ -1,12 +1,8 @@
 
-[![Latest Stable Version](https://poser.pugx.org/boolfalse/clearcaches/v/stable)](https://packagist.org/packages/boolfalse/clearcaches)
 [![Total Downloads](https://poser.pugx.org/boolfalse/clearcaches/downloads)](https://packagist.org/packages/boolfalse/clearcaches)
-[![Latest Unstable Version](https://poser.pugx.org/boolfalse/clearcaches/v/unstable)](https://packagist.org/packages/boolfalse/clearcaches)
 [![License](https://poser.pugx.org/boolfalse/clearcaches/license)](https://packagist.org/packages/boolfalse/clearcaches)
-[![Monthly Downloads](https://poser.pugx.org/boolfalse/clearcaches/d/monthly)](https://packagist.org/packages/boolfalse/clearcaches)
-[![Daily Downloads](https://poser.pugx.org/boolfalse/clearcaches/d/daily)](https://packagist.org/packages/boolfalse/clearcaches)
-[![composer.lock](https://poser.pugx.org/boolfalse/clearcaches/composerlock)](https://packagist.org/packages/boolfalse/clearcaches)
 
+### v1.0.6: Added 'dump' option for 'clearcaches' CLI custom artisan command.
 
 ### v1.0.5: Added custom artisan commands with appropriate signatures ('clearcaches', 'droptables').
 
@@ -37,6 +33,10 @@ For Laravel 5.5 and higher Package have Auto-Discovery functionality, so doesn't
 Clear all Laravel Caches and Dump Autoload:
 ```shell
 php artisan clearcaches
+```
+With CLI option 'dump' You can prevent Autoload Dumping:
+```shell
+php artisan --dump=no
 ```
 Drop all tables from DB:
 ```shell
