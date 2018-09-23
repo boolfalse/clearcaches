@@ -8,6 +8,15 @@ Installation:
 composer require boolfalse/clearcaches
 ----------------------
 
+Update:
+composer update boolfalse/clearcaches --lock
+(for all packages updating just run: composer update)
+----------------------
+
+Remove:
+composer remove boolfalse/clearcaches
+----------------------
+
 Package for recreating Laravel all caches, and for dropping all DB tables.
 ----------------------
 
