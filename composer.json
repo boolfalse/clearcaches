@@ -9,5 +9,12 @@
         "psr-4": {
             "Boolfalse\\ClearCaches\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Boolfalse\\ClearCaches\\ClearCachesServiceProvider"
+            ]
+        }
     }
 }
