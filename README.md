@@ -8,14 +8,15 @@
 [![composer.lock](https://poser.pugx.org/boolfalse/clearcaches/composerlock)](https://packagist.org/packages/boolfalse/clearcaches)
 
 
+Package for clearing/recreating all Laravel caches, and for dropping all DB tables, FOR DEV LEVEL. This package will do development part more easy.
+This package is my first created package. So I will glad to hear any advices and suggestions.
+
+
 ### v1.0.3: Ability to publish package index page and have that as 'resources\views\clearcaches\cc.blade.php' file
 
 ### v1.0.2: Added embed buttons from https://poser.pugx.org/ for README.md
 
 ## Package Installation:
-
-Package for clearing/recreating all Laravel caches, and for dropping all DB tables. It's a package created for easy development.
-This package is my first created package. So I will glad to hear any advices and suggestions.
 
 Require this package with composer. It is recommended to only require the package for development.
 
