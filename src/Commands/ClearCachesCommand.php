@@ -57,7 +57,8 @@ class ClearCachesCommand extends Command
         if(empty($dump)){
             exec('composer dump-autoload');
             echo "Autoload Dumped successfully!\n";
-        } else {
+        }
+		else {
             if(strtolower($dump) == 'n' || strtolower($dump) == 'no'){
                 echo "Autoload Does't Dumped!\n";
             } else {
