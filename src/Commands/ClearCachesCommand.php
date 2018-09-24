@@ -12,7 +12,7 @@ class ClearCachesCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'clearcaches';
+    protected $signature = 'clearcaches {--dump=}';
 
     /**
      * The console command description.
