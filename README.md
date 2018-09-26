@@ -75,11 +75,14 @@ php artisan config:cache
 
 ## Publishing the package index view:
 
+Available for ^1.0 version
 ```shell
 php artisan vendor:publish --provider="Boolfalse\ClearCaches\ClearCachesServiceProvider"
 ```
 
 ## History:
+
+#### v1.1.0: Removed view (for publishing), controller, route
 
 ##### v1.0.12: "minimum-stability" changed to "stable" version.
 
