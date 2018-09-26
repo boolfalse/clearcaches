@@ -80,6 +80,7 @@ Available for ^1.0 version
 php artisan vendor:publish --provider="Boolfalse\ClearCaches\ClearCachesServiceProvider"
 ```
 
+
 ## History:
 
 #### v1.1.0: Removed view (for publishing), controller, route
