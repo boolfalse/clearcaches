@@ -7,7 +7,7 @@ Package for clearing/recreating all Laravel caches, and for dropping all DB tabl
 This package is my first created package. So I will glad to hear any advices and suggestions.
 
 
-##### v1.0.8: Test change to new version.
+##### v1.0.11: Added 'clear-compiled' artisan command.
 
 ##### v1.0.6: Added 'dump' option for 'clearcaches' CLI custom artisan command.
 
