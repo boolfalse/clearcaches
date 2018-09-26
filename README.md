@@ -6,17 +6,6 @@
 Package for clearing/recreating all Laravel caches, and for dropping all DB tables. It's a package created for easy development.
 This package is my first created package. So I will glad to hear any advices and suggestions.
 
-
-##### v1.0.11: Added 'clear-compiled' artisan command.
-
-##### v1.0.6: Added 'dump' option for 'clearcaches' CLI custom artisan command.
-
-##### v1.0.5: Added custom artisan commands with appropriate signatures ('clearcaches', 'droptables').
-
-##### v1.0.4: Ability to publish package index page and have that as 'resources\views\clearcaches\cc.blade.php' file
-
-##### v1.0.2: Added embed buttons from https://poser.pugx.org/ for README.md
-
 ## Package Installation:
 
 Require this package with composer. It is recommended to only require the package for development.
@@ -89,3 +78,17 @@ php artisan config:cache
 ```shell
 php artisan vendor:publish --provider="Boolfalse\ClearCaches\ClearCachesServiceProvider"
 ```
+
+## History:
+
+##### v1.0.12: "minimum-stability" changed to "stable" version.
+
+##### v1.0.11: Added 'clear-compiled' artisan command.
+
+##### v1.0.6: Added 'dump' option for 'clearcaches' CLI custom artisan command.
+
+##### v1.0.5: Added custom artisan commands with appropriate signatures ('clearcaches', 'droptables').
+
+##### v1.0.4: Ability to publish package index page and have that as 'resources\views\clearcaches\cc.blade.php' file
+
+##### v1.0.2: Added embed buttons from https://poser.pugx.org/ for README.md

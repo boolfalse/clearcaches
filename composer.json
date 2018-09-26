@@ -3,7 +3,7 @@
     "description": "Package for recreating Laravel all caches, and for dropping all DB tables",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {},
     "autoload": {
         "psr-4": {
