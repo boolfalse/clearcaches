@@ -38,7 +38,7 @@ class ClearCachesCommand extends Command
      */
     public function handle()
     {
-	Artisan::call('clear-compiled');
+		Artisan::call('clear-compiled');
         echo "The compiled services & packages files have been removed!\n";
 
         Artisan::call('view:clear');

@@ -83,7 +83,9 @@ php artisan vendor:publish --provider="Boolfalse\ClearCaches\ClearCachesServiceP
 
 ## History:
 
-#### v1.1.0: Removed view (for publishing), controller, route
+#### v1.1.4: Clear Compiled command at first.
+
+#### v1.1.0: Removed view (for publishing), controller, route.
 
 ##### v1.0.12: "minimum-stability" changed to "stable" version.
 
