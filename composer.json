@@ -1,6 +1,6 @@
 {
     "name": "boolfalse/clearcaches",
-    "description": "Package for recreating Laravel all caches, and for dropping all DB tables",
+    "description": "Package for recreating Laravel all caches, and for dropping all DB tables, for flushing all sessions.",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "stable",

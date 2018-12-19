@@ -3,7 +3,7 @@
 [![License](https://poser.pugx.org/boolfalse/clearcaches/license)](https://packagist.org/packages/boolfalse/clearcaches)
 
 
-Package for clearing/recreating all Laravel caches, and for dropping all DB tables. It's a package created for easy development.
+Package for clearing/recreating all Laravel caches, for dropping all DB tables, and flushing all Laravel sessions. It's a package created for easy development.
 This package is my first created package. So I will glad to hear any advices and suggestions.
 
 ## Package Installation:
@@ -12,6 +12,11 @@ Require this package with composer. It is recommended to only require the packag
 
 ```shell
 composer require boolfalse/clearcaches --dev
+```
+
+But I prefer to use this in production level too (sometimes I need this). So you can just install with this:
+```shell
+composer require boolfalse/clearcaches
 ```
 
 For Laravel 5.4 and lower versions need to add service provider in config/app.php (or in config.php) to "providers" list array:
@@ -34,6 +39,11 @@ php artisan --dump='no'
 Drop all tables from DB:
 ```shell
 php artisan droptables
+```
+
+Flush all Laravel sessions:
+```shell
+php artisan flushsessions
 ```
 
  - For index page: your-domain/dev/clearcaches-check
@@ -83,9 +93,9 @@ php artisan vendor:publish --provider="Boolfalse\ClearCaches\ClearCachesServiceP
 
 ## History:
 
-#### v1.1.4: Clear Compiled command at first.
+#### v1.1.5: Added 'flushsessions' command.
 
-#### v1.1.0: Removed view (for publishing), controller, route.
+#### v1.1.0: Removed view (for publishing), controller, route
 
 ##### v1.0.12: "minimum-stability" changed to "stable" version.
 
